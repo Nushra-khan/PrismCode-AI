@@ -9,7 +9,7 @@ from backend.summarizer import summarize_code
 # ============================
 # PAGE CONFIG
 # ============================
-st.set_page_config(page_title="CodeSense AI", page_icon="💻", layout="wide")
+st.set_page_config(page_title="PrismCode AI", page_icon="💻", layout="wide")
 
 # ============================
 # THEME TOGGLE (dark / light)
@@ -56,7 +56,7 @@ hr{{ border-top:1px solid {'#303030' if st.session_state.theme=='dark' else '#DD
 # ============================
 # HEADER (Perfectly Centered)
 # ============================
-logo_path = "assets/codesense_logo.png"
+logo_path = "assets/PrismCode_logo.png"
 logo_base64 = ""
 if os.path.exists(logo_path):
     logo_base64 = base64.b64encode(open(logo_path, "rb").read()).decode()
@@ -97,7 +97,7 @@ header_html = f"""
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     ">
-        CodeSense&nbsp;AI
+        PrismCode&nbsp;AI
     </h1>
 </div>
 <p style="text-align:center; color:gray; font-size:1.05rem; margin-top:2px;">
@@ -112,7 +112,7 @@ components.html(header_html, height=160)
 # SIDEBAR SECTION
 # ============================
 with st.sidebar:
-    st.image("assets/codesense_logo.png", width=100)
+    st.image("assets/PrismCode_logo.png", width=100)
     st.header("⚙️ Settings")
 
     folder_path = st.text_input("📁 Local folder path (optional):", placeholder="C:/Users/ASUS/Desktop/project")
@@ -276,21 +276,22 @@ st.markdown("""
 
 <div style="text-align:center; font-size:1rem; color:#aaa;">
   💻 Built with precision by 
-  <a href="https://github.com/najadzed" target="_blank" style="text-decoration:none; color:#7c3aed; font-weight:600;">Najad</a>
-  • Powered by <b>CodeSense AI</b> × 
+  <a href="https://github.com/Nushra-khan" target="_blank" style="text-decoration:none; color:#7c3aed; font-weight:600;">Nushra :) </a>
+  • Powered by <b>PrismCode</b> × 
   <span style="color:#a78bfa; font-weight:600;">Gemini</span> ⚡
 </div>
 
 <div class="footer-icons" style="text-align:center; margin-top:10px;">
-  <a href="https://github.com/najadzed" target="_blank">
+  <a href="https://github.com/Nushra-khan" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
   </a>
-  <a href="https://www.linkedin.com/in/p-najad/" target="_blank">
+  <a href="www.linkedin.com/in/nushra-khan-1994022b8" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
   </a>
 </div>
 
 <p style="text-align:center; font-size:0.9rem; color:#777; margin-top:6px;">
-  © 2025 CodeSense AI. All rights reserved.
+  © 2025 PrismCode. All rights reserved.
 </p>
 """, unsafe_allow_html=True)
+
