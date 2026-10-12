@@ -29,8 +29,7 @@ It’s your personal AI code analyst, designed for speed, clarity, and developer
 **Query:** “Summarize this frontend structure.”  
 **Gemini Summary:** React-based dashboard app using modular context providers, dynamic routing, and API abstraction hooks for clean scalability.
 
-------
-
+----------
 ## 🧩 Tech Stack
 
 | Layer           | Technology                                                                 |
